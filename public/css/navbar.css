@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body,html{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1A1A1A, #333) no-repeat;
+    color: white;
+    height: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+
+nav{
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo a{
+     
+     font-size: 2rem;
+     color:#FFA500;
+     text-decoration: none;
+     
+}
+
+ul{
+    list-style: none;
+    font-size: 1.2;
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFEB3B;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+ul li a:hover{
+    background-color: #555;
+    border-radius: 7px;
+}
+
+.search-icon{
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon input{
+    width: 250px;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.search-icon span{
+    position: absolute;
+    color: #777;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero::after{
+    content: "";
+    display: block;
+    height: 1px;
+    
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    color: #aaa;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.cta{
+    background-color: #FF5722;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255,87,34,0.5);
+}
+
+.cta:hover{
+    background-color: #e64a19;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,87,34,0.8);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.events {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: left;
+    
+}
+
+.event-card h3 {
+    color: #ff5722;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.event-card strong {
+    color: #ffab40;
+}
+
+.event-card button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255,87,34,0.5);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.3);
+}
+
+.event-card button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,87,34,0.8);
+}
+
+footer{
+    background-color: 3222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3{
+    margin-bottom: 10px;
+}
+
+.footer-section p{
+    font-size: 14px;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.newsletter button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #e64a19;
+
+}
+
+.social-icons{
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff5722;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
