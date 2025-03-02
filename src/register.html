@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="../public/css/register.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration</h2>
+        
+        <form id="registrationForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            
+
+            <label for="event">Select Event</label>
+            <select id="event" required>
+                <option value="">Choose an event</option>
+                <option value="Meetup">Meetup</option>
+                <option value="Music Concert">Music Concert</option>
+                <option value="Startup Meet">Startup Meet</option>
+            </select>
+
+            <label for="tickets">Number of Tickets</label>
+            <input type="number" id="tickets" min="1" max="10" placeholder="Enter number of tickets" required>
+
+
+            <label for="tshirt">T-Shirt Size</label>
+            <input type="text" id="tshirt" placeholder="S, M, L, XL">
+
+            <label for="preferences">Additional Preferences</label>
+            <textarea id="preferences" placeholder="Any preferences?"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <script src="../public/js/script.js"></script>
+
+        <p id="message"></p>
+    </div>
+
+
+</body>
+</html>

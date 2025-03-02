@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎉 Thank You for Registering! 🎉</h2>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Tickets:</strong> <span id="displayTickets"></span></p>
+        <a href="home.html"><button>Go to Home</button></a>
+    </div>
+
+    <script>
+        
+        document.getElementById("displayName").textContent = localStorage.getItem("name") || "N/A";
+        document.getElementById("displayEmail").textContent = localStorage.getItem("email") || "N/A";
+        document.getElementById("displayTickets").textContent = localStorage.getItem("tickets") || "N/A";
+    </script>
+</body>
+</html>
