@@ -18,6 +18,7 @@ body,html{
     height: 100%;
     background-size: cover;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -129,6 +130,7 @@ ul li a:hover{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 20px rgba(255,87,34,0.5);
+    text-decoration: none;
 }
 
 .cta:hover{
@@ -190,6 +192,8 @@ ul li a:hover{
 }
 
 .event-card button {
+    width: 120px;
+    height: 40px;
     background-color: #ff5722;
     color: white;
     border: none;
@@ -200,6 +204,7 @@ ul li a:hover{
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 20px rgba(255,87,34,0.5);
+    margin-top: auto;
 }
 
 .event-card:hover {
